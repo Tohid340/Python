@@ -1,0 +1,38 @@
+C.Aim :To create a class called Numbers, which has single class attribute called Multiplier, and a
+
+constructor which takes the parameters x and y.
+
+Source Code :
+
+class Numbers:
+
+multiplier=5
+
+def init (self,x,y):
+
+self.x=x
+
+self.y=y
+
+def add(self):
+return self.x+self.y
+
+@classmethod
+
+def multiply(self,a):
+
+return a*self.multiplier
+
+@staticmethod
+
+defsubtract(b,c):
+
+return b-c
+
+obj=Numbers(5,5)
+
+print(obj.add())
+
+print(obj.multiply(5))
+
+print(obj.subtract(9,2))
