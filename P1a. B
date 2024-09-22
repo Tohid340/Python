@@ -1,0 +1,35 @@
+1. Write the program for the following: (by using control statements and control structure) A.
+
+Create a program that asks the user to enter their name and their age. Print out a message
+
+addressed to them that tells them the year that they will turn 100 years old.
+
+Source Code:
+
+ANS. from datetime import datetime
+
+name=input('Please enter your name')
+
+age=int(input('Please enter your age'))
+
+res=(100-age)+datetime.now().year
+
+print('hello ',name,'you will turn 100 years in ' ,res)
+
+Output:
+
+B. Enter the number from the user and depending on whether the number is even or odd, print
+
+out an appropriate message to the user.
+
+Source Code:
+
+n=int(input('Please enter a number'))
+
+if(n%2==0):
+
+print(n,' is even')
+
+else:
+
+print(n,' is odd')
