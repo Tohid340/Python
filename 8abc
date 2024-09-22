@@ -1,0 +1,66 @@
+ASource Code:
+
+geometry.py
+
+import math
+
+def sphereArea(r):
+
+return 4*math.pi*r**2
+
+def sphereVolume(r):
+
+return 4*math.pi*r**3/3
+
+def sphereMetrics(r):
+
+return sphereArea(r),sphereVolume(r)
+
+def circleArea(r):
+
+return math.pi*r**2
+
+def squareArea(x):
+return x**2
+
+
+
+demo.py
+
+import geometry
+
+def pointyShapeVolume(x,h,square):
+
+if square:
+
+base=geometry.squareArea(x)
+
+else:
+
+base=geometry.circleArea(x)
+
+return h*base/3.0
+
+print(dir(geometry))
+
+print(pointyShapeVolume(4,2.6,True))
+
+print(pointyShapeVolume(4,2.6,False))
+
+
+
+
+C. Aim: Write a program to implement exception handling
+
+Source Code:
+
+try:
+
+num=int(input('Enter a number: '))
+
+re=100/num
+
+except(ValueError,ZeroDivisionError):
+
+print('Something is wrong')
+print('Result is ',re)
