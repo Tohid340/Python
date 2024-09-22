@@ -1,0 +1,46 @@
+C. Write a program to generate the Fibonacci series.
+
+Source Code:
+
+n=int(input('Please the length for Fibonnacci Series: '))
+
+a=0
+
+b=1
+
+print(a)
+
+print(b)
+
+for c in range(n-2):
+
+c=a+b
+
+print(c)
+
+a=b
+
+b=c
+
+Output:
+D. Write a function that reverses the user defined value.
+
+Source Code:
+
+num= int(input('Please enter a number'))
+def reverse(n):
+rev=0
+
+while n!=0:
+
+rem=n%10
+
+rev= rev*10+rem
+
+n=n//10
+
+return rev
+
+print(reverse(num))
+
+print("Reverse of a given number is: " + str(reverse(num)))
