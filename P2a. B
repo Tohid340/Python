@@ -1,0 +1,44 @@
+A. Write a function that takes a character (i.e. a string of length 1) and returns True if it is a
+
+vowel, False otherwise.
+
+Source Code:
+
+a=input('Enter a character')
+
+def isVowel(a):
+
+vowel=['a','e','i','o','u']
+
+if a in vowel:
+
+return True
+
+else:
+
+return False
+
+print(isVowel(a))
+
+Output:
+
+
+
+B. Define a function that computes the length of a given list or string.
+
+Source Code:
+
+def len_s(s):
+
+count=0
+
+for i in s:
+
+if i != ' ':
+
+count+=1
+print('The total length of the string:',count)
+
+s='God is great'
+
+len_s(s)
