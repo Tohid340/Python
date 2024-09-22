@@ -1,0 +1,29 @@
+C. Define a procedure histogram () that takes a list of integers and prints a histogram to the
+
+screen. For example, histogram ([4, 9, 7]) should print the following:
+
+****
+
+*********
+
+*******
+
+Source Code:
+
+l=[]
+
+n=int(input('How many elements you want in list'))
+
+for c in range(0,n):
+
+a=int(input())
+
+l.append(a)
+
+def histogram(a):
+
+for c in range(len(a)):
+
+print(a[c]*'*')
+
+histogram(l)
