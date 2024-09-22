@@ -1,0 +1,39 @@
+AAIM :- To write a program to read an entire text file.
+
+Source Code :-
+
+Output:-
+
+f=open('t1.txt','r')
+
+print(f.read())
+
+
+
+B. Aim :- To write a program to append text to a file and display the text
+
+Source Code :
+
+f=open('t1.txt','a+')
+
+f.write('\n Welcome to PP Practicals')
+
+f.close()
+f=open('t1.txt','r')
+
+print(f.read())
+
+
+
+C. AIM :- To write a python program to read last n lines of a file.
+
+Source Code :-
+
+Output:-
+
+f=open('t1.txt','r')
+
+a=f.readlines()
+
+print(a[-1])
+
