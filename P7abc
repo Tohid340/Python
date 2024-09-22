@@ -1,0 +1,120 @@
+A.Aim :- To design a class that store the information of student and display the same.
+
+Source Code
+
+class Student:
+
+def getdata(self):
+
+self.Name=input('Please Enter Student Name: ')
+
+self.PID=int(input('Please Enter PID Number: '))
+
+self.Course=input('Please Course Name: ')
+
+def display(self):
+
+print('Student Details: ')
+
+print('Student Name: '+self.Name +' PID number: '+str(self.PID) +'
+
+Course: ' +self.Course)
+
+obj=Student()
+
+obj.getdata()
+obj.display()
+
+Output:-
+
+
+
+
+B. AIM : To implement the concept of inheritance using python.
+
+Source Code :
+
+Single Inheritance
+
+class Phone:
+
+def call(self):
+
+print('Calling...')
+
+class Mobile(Phone):
+
+def Camera(self):
+
+print('Photo Clicked...')
+
+def WIFI(self):
+
+print('WIFI Connected')
+
+obj=Mobile()
+
+obj.Camera()
+
+obj.WIFI()
+obj.call()
+
+
+
+
+Multiple Inheritance
+
+class marks1:
+
+def m1(self,st1):
+
+self.st1=st1
+
+class marks2:
+
+def m2(self,st2):
+
+self.st2=st2
+
+class result(marks1,marks2):
+
+def r(self,st1,st2):
+
+self.res=st1+st2
+
+print(self.res)
+
+obj=result()
+
+obj.r(72,77)
+
+
+
+
+
+Multilevel Inheritance
+
+class Defence:
+
+def type(self):
+
+print('Security')
+
+class Army(Defence):
+
+def head(self):
+
+print('Chief of Army Staff')
+class General(Army):
+
+def commands(self):
+
+print('Armed force')
+
+obj=General()
+
+obj.type()
+
+obj.head()
+
+obj.commands()
